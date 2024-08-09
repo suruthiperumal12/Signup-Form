@@ -1,0 +1,76 @@
+body {
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(162, 23, 147);
+    background: radial-gradient(circle, rgba(162, 23, 147, 1) 0%, rgba(174, 197, 236, 1) 0%, rgba(201, 174, 238, 1) 55%, rgba(148, 187, 233, 1) 100%);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    width: 400px;
+    margin: 40px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #792099;
+}
+
+#form button {
+    display: flex;
+    background-color: #792099;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px 0px;
+    margin-left: 150px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.input-group input {
+    border: none;
+    font-size: 1em;
+    margin-top: 5px;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.input-group input:focus {
+    outline: 0;
+}
+
+.input-group .error {
+    color: rgb(242, 18, 18);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.input-group.success input {
+    border-color: #0cc477;
+}
+
+.input-group.error input {
+    border-color: rgb(206, 67, 67);
+}
