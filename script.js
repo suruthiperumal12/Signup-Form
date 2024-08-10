@@ -3,6 +3,7 @@ var username = document.getElementById("username");
 var email = document.getElementById("email");
 var password = document.getElementById("password");
 var cpassword = document.getElementById("cpassword");
+
 form.addEventListener("submit", (e) => {
   if (!validInputfields()) {
     e.preventDefault();
@@ -42,7 +43,7 @@ function validInputfields() {
   }
   if (cpasswordval === "") {
     success = false;
-    setError(cpassword, "Confirm password isre quired");
+    setError(cpassword, "Confirm password is required");
   } else if (cpasswordval !== passwordval) {
     success = false;
     setError(cpassword, "Password doesnot match");
